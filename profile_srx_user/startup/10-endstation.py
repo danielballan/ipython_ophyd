@@ -1,3 +1,1 @@
-from ophyd.controls import PVPositioner, EpicsMotor
-
-# un-implemented at SRX
+../../profile_xf05id1/startup/10-endstation.py

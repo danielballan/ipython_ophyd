@@ -38,7 +38,7 @@ hfm_bdr = EpicsMotor('XF:05IDA-OP:1{Mir:1-Ax:Bend}Mtr', name='hfm_bdr')
 dcm_bragg = EpicsMotor('XF:05IDA-OP:1{Mono:HDCM-Ax:P}Mtr', name='dcm_bragg')
 dcm_c2_pitch = EpicsMotor('XF:05IDA-OP:1{Mono:HDCM-Ax:P2}Mtr', name='dcm_c2_pitch')
 dcm_c1_roll = EpicsMotor('XF:05IDA-OP:1{Mono:HDCM-Ax:R1}Mtr', name='dcm_c1_roll')
-dcm_gap = EpicsMotor('XF:05IDA-OP:1{Mono:HDCM-Ax:X2}Mtr', name='c_gap')
+dcm_gap = EpicsMotor('XF:05IDA-OP:1{Mono:HDCM-Ax:X2}Mtr', name='dcm_gap')
 dcm_x = EpicsMotor('XF:05IDA-OP:1{Mono:HDCM-Ax:X}Mtr', name='dcm_x')
 dcm_y = EpicsMotor('XF:05IDA-OP:1{Mono:HDCM-Ax:Y}Mtr', name='dcm_y')
 

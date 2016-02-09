@@ -1,3 +1,7 @@
+# this import is to set the api levels of Qt correctly
+# so that enaml will behave
+import dataportal
+
 # Configuration file for ipython.
 
 c = get_config()
@@ -32,11 +36,11 @@ c = get_config()
 
 # Enable GUI event loop integration with any of ('glut', 'gtk', 'gtk3', 'none',
 # 'osx', 'pyglet', 'qt', 'qt4', 'tk', 'wx').
-#c.InteractiveShellApp.gui = 'qt4'
+# c.InteractiveShellApp.gui = 'auto'
 
 # Pre-load matplotlib and numpy for interactive use, selecting a particular
 # matplotlib backend and loop integration.
-c.InteractiveShellApp.pylab = 'auto'
+#c.InteractiveShellApp.pylab = 'auto'
 
 # Configure matplotlib for interactive use with the default matplotlib backend.
 # c.InteractiveShellApp.matplotlib = None
@@ -50,7 +54,8 @@ c.InteractiveShellApp.pylab = 'auto'
 c.StoreMagics.autorestore = True
 
 # A list of dotted module names of IPython extensions to load.
-c.InteractiveShellApp.extensions = ['pyOlog.cli.ipy']
+c.InteractiveShellApp.extensions = ['ophyd.session',
+                                    'pyOlog.cli.ipy']
 
 # Run the module as a script.
 # c.InteractiveShellApp.module_to_run = ''
@@ -343,7 +348,7 @@ c.TerminalInteractiveShell.autocall = 2
 # c.PromptManager.justify = True
 
 # Input prompt.  '\#' will be transformed to the prompt number
-c.PromptManager.in_template = 'BlueSky [\\#]: '
+c.PromptManager.in_template = 'Ophyd [\\#]: '
 
 #
 # c.PromptManager.color_scheme = 'Linux'
